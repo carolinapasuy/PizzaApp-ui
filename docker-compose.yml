@@ -1,0 +1,10 @@
+version: "3.1"
+
+services:
+  frontend-service:
+    build:
+      dockerfile: Dockerfile
+      context: ./
+    restart: on-failure
+    ports:
+      - "4200:4200"
